@@ -5,6 +5,9 @@
 2. npm install -g pulp bower
 
 3. pulp init
+
+4. pulp browserify
+
 ```
 
 Запуск командной строки выполнения

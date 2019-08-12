@@ -16,8 +16,5 @@
   },
   "devDependencies": {
     "purescript-psci-support": "^4.0.0"
-  },
-  "scripts": {
-    "start": "pupl build -0 --to output.js"
   }
 }

@@ -4,6 +4,9 @@ import Prelude
 import Effect (Effect)
 import Effect.Console (log)
 
-main :: Effect Unit
+greet :: String -> String -> String
+greet name surname = "Hello, " <> name <> "!" <> surname
+
+main::Effect Unit
 main = do
-  log "Hello sailor! Goshan make it and something else"
+  log (greet "World" "Goshan")
