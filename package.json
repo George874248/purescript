@@ -1,0 +1,28 @@
+{
+  "name": "purescript",
+  "version": "1.0.0",
+  "description": "Для того чтобы развернуть проект выполните команды ``` 1. sudo npm install -g purescript --unsafe-perm=true",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "start": "concurrently \"pulp --watch build --to ./output/app.js\" \"parcel index.html\"",
+    "build": "pulp build --to ./output/app.js && parcel build index.html",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/George874248/purescript.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/George874248/purescript/issues"
+  },
+  "homepage": "https://github.com/George874248/purescript#readme",
+  "devDependencies": {
+    "concurrently": "^4.1.1",
+    "parcel-bundler": "^1.12.3"
+  }
+}
